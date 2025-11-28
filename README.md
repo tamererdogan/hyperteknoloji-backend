@@ -23,13 +23,12 @@ cd hyperteknoloji-backend
 ### 3. .env dosyasını oluşturun
 
 ```bash
-cp .env.example .env
+.env.example dosyasının kopyasını .env adında oluşturun yada .env.example dosyasının ismini .env olarak değiştirin.
 ```
 
 ### 4. .env değişkenlerini düzenleyin
 
 ```bash
--
 - HYPER_API_BASE_URL değerine Hyper Teknoloji API’sinin ana URL bilgisi girilmelidir.
 - HYPER_API_TOKEN değerine Hyper Teknoloji API’sine erişim için kullanılan Bearer Token girilmelidir.
 - HYPER_API_CACHE_TTL değerini Hyper Teknoloji API’den gelen ürün verilerinin backend tarafında kaç saniye boyunca cache’te tutulacağını belirler. Performans artırmak ve gereksiz API çağrılarını azaltmak için istenen değere getirilebilir.
