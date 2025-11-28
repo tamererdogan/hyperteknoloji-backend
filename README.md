@@ -43,16 +43,16 @@ HYPER_API_TOKEN=bearer-token-here
 HYPER_API_CACHE_TTL=3600
 ```
 
-### 5. App key oluşturun
-
-```bash
-php artisan key:generate
-```
-
-### 6. Proje bağımlılıklarını indirin
+### 5. Proje bağımlılıklarını indirin
 
 ```bash
 composer install
+```
+
+### 6. App key oluşturun
+
+```bash
+php artisan key:generate
 ```
 
 ### 7. Projeyi başlatın
