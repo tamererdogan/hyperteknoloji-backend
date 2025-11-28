@@ -22,7 +22,10 @@ class ProductController extends Controller
             'per_page' => 'sometimes|integer|min:1|max:100',
         ]);
 
-        $result = $this->productService->getProducts($params["page"], $params["per_page"]);
+        $page = $params['page'] ?? 0;
+        $perPage = $params['per_page'] ?? 10;
+
+        $result = $this->productService->getProducts($page, $perPage);
         return response()->json($result, $result['success'] ? 200 : 400);
     }
 }
